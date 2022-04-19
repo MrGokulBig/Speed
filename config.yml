@@ -1,4 +1,4 @@
-token: "I0LaWJuVvyTJdFXd"   # lichess OAuth2 Token
+token: "lip_fPaZbMI0epxMReDFUJkn"   # lichess OAuth2 Token
 url: "https://lichess.org/"  # lichess base URL
 
 engine:                      # engine settings
@@ -48,11 +48,11 @@ fake_think_time: false       # artificially slow down the bot to pretend like it
 move_overhead: 2000          # increase if your bot flags games too often
 
 challenge:                   # incoming challenges
-  concurrency: 1             # number of games to play simultaneously
+  concurrency: 10             # number of games to play simultaneously
   sort_by: "best"            # possible values: "best", "first"
   accept_bot: true          # accepts challenges coming from other bots
   max_increment: 180         # maximum amount of increment to accaept a challenge. the max is 180. set to 0 for no increment
-  min_increment: 0           # minimum amount of increment to accept a challenge
+  min_increment: 100           # minimum amount of increment to accept a challenge
   variants:                  # chess variants to accept (http://lichess.org/variant)
     - standard
 #    - fromPosition
@@ -68,8 +68,8 @@ challenge:                   # incoming challenges
     - bullet
     - blitz
     - rapid
-    - classical
-    - correspondence
+#    - classical
+#    - correspondence
   modes:                     # game modes to accept
     - casual                 # unrated games
     - rated                  # rated games - must comment if the engine doesn't try to win
